@@ -71,7 +71,7 @@ ros-noetic-slam-gmapping \
 4. **克隆本项目**
 ```bash
 cd ~/nav_ws/src
-git clone https://github.com/yourusername/ros-navigation-bot.git
+git clone (https://github.com/ukpkuk/XDU_ROS_HM.git)
 cd ..
 rosdep install --from-paths src --ignore-src -r -y
 ```
@@ -83,48 +83,8 @@ source devel/setup.bash
 ```
 
 ## 使用说明
-
-### 基础操作
-
-1. **启动机器人基础功能**
-```bash
-roslaunch nav_bot bringup.launch
-```
-
-2. **建图模式**
-```bash
-roslaunch nav_bot slam.launch mapper:=gmapping
-# 使用遥控器或网页界面控制机器人移动完成建图
-# 保存地图：rosrun map_server map_saver -f ~/my_map
-```
-
-3. **导航模式**
-```bash
-roslaunch nav_bot navigation.launch map_file:=/path/to/my_map.yaml
-# 在RViz中设置目标点
-```
-
-4. **自主避障演示**
-```bash
-roslaunch nav_bot autonomous_nav.launch
-```
-
-### 高级功能
-
-- **多目标点巡逻**：
-  ```bash
-  rosrun nav_bot waypoint_patrol.py _points:="[x1,y1], [x2,y2]"
-  ```
-  
-- **动态避障测试**：
-  ```bash
-  roslaunch nav_bot obstacle_test.launch
-  ```
-
-- **性能监控**：
-  ```bash
-  roslaunch nav_bot performance_monitor.launch
-  ```
+参考冰达机器人提供的项目例程
+https://bingda.yuque.com/staff-hckvzc/wg26sc/gbrpw4d2zryu5qgd?singleDoc#
 
 ## 项目结构
 
@@ -160,10 +120,6 @@ raytrace_range: 3.0      # 光线追踪范围
 inflation_radius: 0.3    # 膨胀半径
 ```
 
-### 添加新传感器
-1. 在 `config/sensors` 中创建新配置文件
-2. 更新 `launch/bringup.launch` 包含传感器驱动
-3. 修改 `costmap_params.yaml` 添加传感器层
 
 ## 贡献指南
 
@@ -177,31 +133,11 @@ inflation_radius: 0.3    # 膨胀半径
 - [ROS编码规范](http://wiki.ros.org/StyleGuide)
 - [项目开发路线图](docs/ROADMAP.md)
 
-## 许可协议
 
-本项目采用 **Apache License 2.0**
-```
-Copyright 2023 Your Name
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
 ```
 
 ## 技术支持
-
-如需技术支持，请通过以下方式联系：
-- 项目讨论区：[GitHub Discussions](https://github.com/yourusername/ros-navigation-bot/discussions)
-- 邮件支持：support@yourproject.org
-- 社区论坛：[ROS Discourse](https://discourse.ros.org/)
+https://bingda.yuque.com/staff-hckvzc/wg26sc/gbrpw4d2zryu5qgd?singleDoc#
 
 ---
 
