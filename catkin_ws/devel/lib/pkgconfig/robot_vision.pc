@@ -1,0 +1,8 @@
+prefix=/home/bingda/catkin_ws/devel
+
+Name: robot_vision
+Description: Description of robot_vision
+Version: 1.0.0
+Cflags: -I/home/bingda/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

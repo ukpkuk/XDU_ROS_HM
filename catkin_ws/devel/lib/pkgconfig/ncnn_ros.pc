@@ -1,0 +1,8 @@
+prefix=/home/bingda/catkin_ws/devel
+
+Name: ncnn_ros
+Description: Description of ncnn_ros
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp roslib cv_bridge image_transport image_geometry sensor_msgs object_information_msgs

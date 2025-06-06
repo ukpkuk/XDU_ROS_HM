@@ -1,0 +1,8 @@
+prefix=/home/bingda/catkin_ws/devel
+
+Name: voice_assistant
+Description: Description of voice_assistant
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

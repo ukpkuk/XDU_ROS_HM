@@ -1,0 +1,8 @@
+prefix=/home/bingda/catkin_ws/install
+
+Name: robot_vslam
+Description: Description of robot_vslam
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
